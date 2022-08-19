@@ -57,7 +57,7 @@ function CompletePage({ setStep }) {
             {orderTable}
           </tbody>
         </table>
-        <button onClick={handleClick}>첫페이지로</button>
+        <button onClick={handleClick}>돌아가기</button>
       </div>
     );
   }

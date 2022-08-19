@@ -69,7 +69,7 @@ test("From order to order completion", async () => {
   expect(loadingDisappeared).not.toBeInTheDocument();
 
   const firstPageButton = screen.getByRole("button", {
-    name: "첫페이지로",
+    name: "돌아가기",
   });
   userEvent.click(firstPageButton);
 
@@ -83,5 +83,5 @@ test("From order to order completion", async () => {
     screen.getByRole("spinbutton", { name: "America" });
   });
 
-  // await screen.findByRole("spinbutton", { name: "America" });
+  // 혹은 await screen.findByRole("spinbutton", { name: "America" });
 });
